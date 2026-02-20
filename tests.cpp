@@ -36,18 +36,18 @@ TEST_CASE("Length based constructor, getLength")
   REQUIRE(str2.getLength() == 4);
 }
 
-// TEST_CASE("String Constructor, getLength")
-// {
-//   cout << "1b: String contructor & getLength..." << endl;
-//   // This does NOT test to see if constructor stores the correct chars, just if
-//   // it sets length
+TEST_CASE("String Constructor, getLength")
+{
+  cout << "1b: String contructor & getLength..." << endl;
+  // This does NOT test to see if constructor stores the correct chars, just if
+  // it sets length
 
-//   DNAStrand str1("ACGTAGCT");
-//   REQUIRE(str1.getLength() == 8);
+  DNAStrand str1("ACGTAGCT");
+  REQUIRE(str1.getLength() == 8);
 
-//   DNAStrand str2("AACC");
-//   REQUIRE(str2.getLength() == 4);
-// }
+  DNAStrand str2("AACC");
+  REQUIRE(str2.getLength() == 4);
+}
 
 // TEST_CASE("at")
 // {
