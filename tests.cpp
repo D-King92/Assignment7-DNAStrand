@@ -144,7 +144,7 @@ TEST_CASE("Copy constructor")
     DNAStrand str2(str1); // Call copy ctor
 
     string test2s = str2.toString();
-    cout << test2s <<;
+    cout << test2s;
 
     bool isMatch = (str1 == str2);
     REQUIRE(isMatch);
