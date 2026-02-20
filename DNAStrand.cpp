@@ -70,5 +70,9 @@ DNAStrand::~DNAStrand()
 }
 
 DNAStrand::Base DNAStrand::at(int index) const {
-  if ()
+  if (index >= 0 && index < m_length) {
+    return m_bases[index];
+  } else {
+    throw 
+  }
 }
