@@ -157,5 +157,7 @@ DNAStrand DNAStrand::getComplement() const {
 }
 
 DNAStrand DNAStrand::operator+(const DNAStrand &other) const {
-  
+  DNAStrand sum(*this);
+
+  for (int i = 0; i < sum.m_length; ++sum)
 }
