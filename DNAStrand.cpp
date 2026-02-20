@@ -129,6 +129,8 @@ DNAStrand DNAStrand::getComplement() const {
   DNAStrand compliment(*this);
 
   for (int i = 0; i < compliment.m_length; ++i) {
-    
+    if (compliment.m_bases[i] == Base::A) {
+      
+    }
   }
 }
