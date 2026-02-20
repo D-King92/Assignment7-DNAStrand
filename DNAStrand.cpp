@@ -84,3 +84,7 @@ string DNAStrand::toString() const {
   }
   return output;
 }
+
+bool DNAStrand::operator==(const DNAStrand &other) const {
+  
+}
