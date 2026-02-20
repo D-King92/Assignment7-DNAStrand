@@ -120,19 +120,19 @@ TEST_CASE("== test 1")
   REQUIRE(!isMatch2);
 }
 
-// TEST_CASE("== test 2")
-// {
-//   cout << "4b: More == tests..." << endl;
+TEST_CASE("== test 2")
+{
+  cout << "4b: More == tests..." << endl;
 
-//   DNAStrand str("AACC");
-//   DNAStrand str2("AAC");
-//   DNAStrand str3("AACCT");
-//   // Make sure unequal length stands don't cause == issues
-//   bool isMatch1 = (str == str2);
-//   bool isMatch2 = (str == str3);
-//   REQUIRE(!isMatch1);
-//   REQUIRE(!isMatch2);
-// }
+  DNAStrand str("AACC");
+  DNAStrand str2("AAC");
+  DNAStrand str3("AACCT");
+  // Make sure unequal length stands don't cause == issues
+  bool isMatch1 = (str == str2);
+  bool isMatch2 = (str == str3);
+  REQUIRE(!isMatch1);
+  REQUIRE(!isMatch2);
+}
 
 // TEST_CASE("Copy constructor")
 // {
