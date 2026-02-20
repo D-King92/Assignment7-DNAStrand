@@ -162,6 +162,10 @@ DNAStrand DNAStrand::operator+(const DNAStrand &other) const {
   DNAStrand sum(sumSize);
 
   for (int i = 0; i < m_length; ++i) {
-    
+    sum.m_bases[i] = m_bases[i];
+  }
+
+  for (int i = 0; i < other.m_length; ++i) {
+    sum.m_bases[m_length + i] = other.m_bases[i];
   }
 }
