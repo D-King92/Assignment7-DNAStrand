@@ -142,9 +142,6 @@ TEST_CASE("Copy constructor")
   {
     // new scope
     DNAStrand str2(str1); // Call copy ctor
-
-    string test2s = str1.toString();
-
     bool isMatch = (str1 == str2);
     REQUIRE(isMatch);
     // str2 goes away when we leave this block...
