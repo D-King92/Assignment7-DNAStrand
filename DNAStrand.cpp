@@ -55,3 +55,8 @@ int DNAStrand::getLength() const
 {
   return m_length;
 }
+
+DNAStrand::~DNAStrand()
+{
+  delete[] m_bases;
+}
