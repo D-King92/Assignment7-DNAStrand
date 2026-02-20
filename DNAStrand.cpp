@@ -12,8 +12,7 @@ using namespace std;
 
 char DNAStrand::baseToChar(Base b)
 {
-  switch (b)
-  {
+  switch (b) {
   case Base::A:
     return 'A';
   case Base::C:
@@ -29,8 +28,7 @@ char DNAStrand::baseToChar(Base b)
 
 DNAStrand::Base DNAStrand::charToBase(char c)
 {
-  switch (c)
-  {
+  switch (c) {
   case 'A':
     return Base::A;
   case 'C':
@@ -44,10 +42,16 @@ DNAStrand::Base DNAStrand::charToBase(char c)
   }
 }
 
-DNAStrand::DNAStrand(int lengthValue) {
+DNAStrand::DNAStrand(int lengthValue)
+{
   m_length = lengthValue;
   m_bases = new Base[lengthValue];
   for (int i = 0; i < lengthValue; i++) {
     m_bases[i] = Base::A;
   }
+}
+
+int DNAStrand::getLength() const
+{
+  return m_length;
 }
