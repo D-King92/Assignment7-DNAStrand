@@ -99,5 +99,6 @@ bool DNAStrand::operator==(const DNAStrand &other) const {
 }
 
 DNAStrand::DNAStrand(const DNAStrand &other) {
+  m_length = other.m_length;
   
 }
