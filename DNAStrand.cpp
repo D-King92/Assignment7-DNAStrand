@@ -68,3 +68,7 @@ DNAStrand::~DNAStrand()
 {
   delete[] m_bases;
 }
+
+DNAStrand::Base DNAStrand::at(int index) const {
+  if ()
+}
