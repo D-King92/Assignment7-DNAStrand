@@ -138,13 +138,11 @@ TEST_CASE("Copy constructor")
 {
   cout << "5: Copy constructor..." << endl;
   DNAStrand str1("ACGTAGCT");
+  string test1s = str1.toString();
 
   {
     // new scope
     DNAStrand str2(str1); // Call copy ctor
-
-    string test1s = str1.toString();
-
     bool isMatch = (str1 == str2);
     REQUIRE(isMatch);
     // str2 goes away when we leave this block...
