@@ -51,9 +51,10 @@ DNAStrand::DNAStrand(int lengthValue)
   }
 }
 
-DNAStrand::DNAStrand(const std::string &startingString) {
+DNAStrand::DNAStrand(const std::string& startingString)
+{
   m_length = static_cast<int>(startingString.size());
-  m_bases  = new Base[m_length];
+  m_bases = new Base[m_length];
   for (int i = 0; i < m_length; ++i) {
     m_bases[i] = charToBase(startingString.at(i));
   }
@@ -69,7 +70,8 @@ DNAStrand::~DNAStrand()
   delete[] m_bases;
 }
 
-DNAStrand::Base DNAStrand::at(int index) const {
+DNAStrand::Base DNAStrand::at(int index) const
+{
   if (index >= 0 && index < m_length) {
     return m_bases[index];
   } else {
@@ -77,7 +79,8 @@ DNAStrand::Base DNAStrand::at(int index) const {
   }
 }
 
-string DNAStrand::toString() const {
+string DNAStrand::toString() const
+{
   string output;
   for (int i = 0; i < m_length; ++i) {
     output += baseToChar(m_bases[i]);
@@ -85,7 +88,8 @@ string DNAStrand::toString() const {
   return output;
 }
 
-bool DNAStrand::operator==(const DNAStrand &other) const {
+bool DNAStrand::operator==(const DNAStrand& other) const
+{
   if (m_length != other.m_length) {
     return false;
   } else {
@@ -98,10 +102,14 @@ bool DNAStrand::operator==(const DNAStrand &other) const {
   return true;
 }
 
-DNAStrand::DNAStrand(const DNAStrand &other) {
+DNAStrand::DNAStrand(const DNAStrand& other)
+{
   m_length = other.m_length;
   m_bases = new Base[m_length];
   for (int i; i < m_length; ++i) {
     m_bases[i] = other.m_bases[i];
   }
+
+  cout << toString();
+  cout << other.toString();
 }
