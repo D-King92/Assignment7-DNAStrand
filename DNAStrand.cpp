@@ -90,7 +90,9 @@ bool DNAStrand::operator==(const DNAStrand &other) const {
     return false;
   } else {
     for (int i = 0; i < m_length, ++i) {
-      if (m_bases[i] != other.m_bases[i])
+      if (m_bases[i] != other.m_bases[i]) {
+        
+      }
     }
   }
 }
