@@ -110,3 +110,5 @@ DNAStrand::DNAStrand(const DNAStrand& other)
     m_bases[i] = other.m_bases[i];
   }
 }
+
+DNAStrand &operator=(const DNAStrand &other)
