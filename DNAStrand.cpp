@@ -76,3 +76,7 @@ DNAStrand::Base DNAStrand::at(int index) const {
     throw out_of_range("Index out of Bounds.");
   }
 }
+
+string DNAStrand::toString() const {
+  
+}
