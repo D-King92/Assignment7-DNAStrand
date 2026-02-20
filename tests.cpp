@@ -16,8 +16,8 @@ using doctest::Approx;
 //-----------------------------------------------------------------------------------
 
 #include <iostream>
-#include <stdexcept>
 #include <sstream>
+#include <stdexcept>
 
 // Include your .h files
 #include "DNAStrand.h"
@@ -76,23 +76,17 @@ TEST_CASE("at")
   // Check that excpetion is thrown if bad index provided
   int exceptionsCaught = 0;
 
-  try
-  {
+  try {
     DNAStrand::Base b = str2.at(-1);
     cout << DNAStrand::baseToChar(b); // never should get here
-  }
-  catch (out_of_range &e)
-  {
+  } catch (out_of_range& e) {
     exceptionsCaught++;
   }
 
-  try
-  {
+  try {
     DNAStrand::Base b = str2.at(4);
     cout << DNAStrand::baseToChar(b); // never should get here
-  }
-  catch (out_of_range &e)
-  {
+  } catch (out_of_range& e) {
     exceptionsCaught++;
   }
 
@@ -109,22 +103,22 @@ TEST_CASE("toString")
   REQUIRE(str2.toString() == "GT");
 }
 
-// TEST_CASE("== test 1")
-// {
-//   cout << "4a: operator ==" << endl;
+TEST_CASE("== test 1")
+{
+  cout << "4a: operator ==" << endl;
 
-//   DNAStrand strand1("ACGTAGCT");
-//   DNAStrand strand2("ACGTAGCT");
+  DNAStrand strand1("ACGTAGCT");
+  DNAStrand strand2("ACGTAGCT");
 
-//   bool isMatch = (strand1 == strand2);
-//   REQUIRE(isMatch);
+  bool isMatch = (strand1 == strand2);
+  REQUIRE(isMatch);
 
-//   DNAStrand strand3("AACC");
-//   DNAStrand strand4("AAGC");
+  DNAStrand strand3("AACC");
+  DNAStrand strand4("AAGC");
 
-//   bool isMatch2 = (strand3 == strand4);
-//   REQUIRE(!isMatch2);
-// }
+  bool isMatch2 = (strand3 == strand4);
+  REQUIRE(!isMatch2);
+}
 
 // TEST_CASE("== test 2")
 // {
