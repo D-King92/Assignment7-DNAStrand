@@ -112,5 +112,7 @@ DNAStrand::DNAStrand(const DNAStrand& other)
 }
 
 DNAStrand &DNAStrand::operator=(const DNAStrand &other) {
-  
+  if (this != &other) {
+    
+  }
 }
