@@ -124,3 +124,7 @@ DNAStrand &DNAStrand::operator=(const DNAStrand &other) {
 
   return *this;
 }
+
+DNAStrand DNAStrand::getComplement() const {
+  
+}
