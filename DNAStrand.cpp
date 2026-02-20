@@ -130,7 +130,7 @@ DNAStrand DNAStrand::getComplement() const {
 
   for (int i = 0; i < compliment.m_length; ++i) {
     if (compliment.m_bases[i] == Base::A) {
-      
-    }
+      compliment.m_bases[i] = Base::T;
+    } else
   }
 }
