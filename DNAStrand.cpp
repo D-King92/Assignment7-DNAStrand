@@ -130,9 +130,18 @@ DNAStrand DNAStrand::getComplement() const {
 
   for (int i = 0; i < compliment.m_length; ++i) {
     switch(compliment.m_bases[i]) {
-      case Base::A {
-        
-      }
+      case Base::A:
+        compliment.m_bases[i] = Base::T;
+        break;
+      case Base::T:
+        compliment.m_bases[i] = Base::A;
+        break;
+      case Base::C:
+        compliment.m_bases[i] = Base::G;
+        break;
+      case Base::G:
+        compliment.m_bases[i] = Base::C;
+        break;
     }
   }
 }
