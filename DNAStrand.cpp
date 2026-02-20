@@ -158,7 +158,7 @@ DNAStrand DNAStrand::getComplement() const {
 
 DNAStrand DNAStrand::operator+(const DNAStrand &other) const {
   
-  int sumSize = 
+  int sumSize = m_length + other.m_length;
   DNAStrand sum();
 
 
