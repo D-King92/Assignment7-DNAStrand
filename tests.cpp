@@ -67,37 +67,37 @@ TEST_CASE("at")
   REQUIRE(str3.at(2) == DNAStrand::Base::A);
 }
 
-// TEST_CASE("at")
-// {
-//   cout << "2b: at exceptions" << endl;
+TEST_CASE("at")
+{
+  cout << "2b: at exceptions" << endl;
 
-//   DNAStrand str2("TTTT");
+  DNAStrand str2("TTTT");
 
-//   // Check that excpetion is thrown if bad index provided
-//   int exceptionsCaught = 0;
+  // Check that excpetion is thrown if bad index provided
+  int exceptionsCaught = 0;
 
-//   try
-//   {
-//     DNAStrand::Base b = str2.at(-1);
-//     cout << DNAStrand::baseToChar(b); // never should get here
-//   }
-//   catch (out_of_range &e)
-//   {
-//     exceptionsCaught++;
-//   }
+  try
+  {
+    DNAStrand::Base b = str2.at(-1);
+    cout << DNAStrand::baseToChar(b); // never should get here
+  }
+  catch (out_of_range &e)
+  {
+    exceptionsCaught++;
+  }
 
-//   try
-//   {
-//     DNAStrand::Base b = str2.at(4);
-//     cout << DNAStrand::baseToChar(b); // never should get here
-//   }
-//   catch (out_of_range &e)
-//   {
-//     exceptionsCaught++;
-//   }
+  try
+  {
+    DNAStrand::Base b = str2.at(4);
+    cout << DNAStrand::baseToChar(b); // never should get here
+  }
+  catch (out_of_range &e)
+  {
+    exceptionsCaught++;
+  }
 
-//   REQUIRE(exceptionsCaught == 2);
-// }
+  REQUIRE(exceptionsCaught == 2);
+}
 
 // TEST_CASE("toString")
 // {
