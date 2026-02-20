@@ -51,6 +51,10 @@ DNAStrand::DNAStrand(int lengthValue)
   }
 }
 
+DNAStrand::DNAStrand(const std::string &startingString) {
+  
+}
+
 int DNAStrand::getLength() const
 {
   return m_length;
