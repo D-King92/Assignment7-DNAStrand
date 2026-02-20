@@ -86,5 +86,11 @@ string DNAStrand::toString() const {
 }
 
 bool DNAStrand::operator==(const DNAStrand &other) const {
-  if 
+  if (m_length != other.m_length) {
+    return false;
+  } else {
+    for (int i = 0; i < m_length, ++i) {
+      if (m_bases[i] != other.m_bases[i])
+    }
+  }
 }
