@@ -49,23 +49,23 @@ TEST_CASE("String Constructor, getLength")
   REQUIRE(str2.getLength() == 4);
 }
 
-// TEST_CASE("at")
-// {
-//   cout << "2a: at basics" << endl;
-//   DNAStrand str1("ACGTACGTACGT");
-//   REQUIRE(str1.at(0) == DNAStrand::Base::A);
-//   REQUIRE(str1.at(5) == DNAStrand::Base::C);
+TEST_CASE("at")
+{
+  cout << "2a: at basics" << endl;
+  DNAStrand str1("ACGTACGTACGT");
+  REQUIRE(str1.at(0) == DNAStrand::Base::A);
+  REQUIRE(str1.at(5) == DNAStrand::Base::C);
 
-//   DNAStrand str2("TTTT");
-//   REQUIRE(str2.at(0) == DNAStrand::Base::T);
-//   REQUIRE(str2.at(2) == DNAStrand::Base::T);
+  DNAStrand str2("TTTT");
+  REQUIRE(str2.at(0) == DNAStrand::Base::T);
+  REQUIRE(str2.at(2) == DNAStrand::Base::T);
 
-//   // length based constructor should initialize all memory to DNAStrand::Base::A
-//   DNAStrand str3(3);
-//   REQUIRE(str3.at(0) == DNAStrand::Base::A);
-//   REQUIRE(str3.at(1) == DNAStrand::Base::A);
-//   REQUIRE(str3.at(2) == DNAStrand::Base::A);
-// }
+  // length based constructor should initialize all memory to DNAStrand::Base::A
+  DNAStrand str3(3);
+  REQUIRE(str3.at(0) == DNAStrand::Base::A);
+  REQUIRE(str3.at(1) == DNAStrand::Base::A);
+  REQUIRE(str3.at(2) == DNAStrand::Base::A);
+}
 
 // TEST_CASE("at")
 // {
