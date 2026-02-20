@@ -191,19 +191,19 @@ TEST_CASE("getComplement")
   REQUIRE(isMatch2);
 }
 
-// TEST_CASE("operator+")
-// {
-//   cout << "8: Operator +..." << endl;
-//   DNAStrand str1("AATT");
-//   DNAStrand str2("CCGG");
-//   DNAStrand str3 = str1 + str2;
+TEST_CASE("operator+")
+{
+  cout << "8: Operator +..." << endl;
+  DNAStrand str1("AATT");
+  DNAStrand str2("CCGG");
+  DNAStrand str3 = str1 + str2;
 
-//   bool isMatch = (str3 == DNAStrand("AATTCCGG"));
-//   REQUIRE(isMatch);
+  bool isMatch = (str3 == DNAStrand("AATTCCGG"));
+  REQUIRE(isMatch);
 
-//   // Check originals aren't broken
-//   bool isMatch2 = (str1 == DNAStrand("AATT"));
-//   bool isMatch3 = (str2 == DNAStrand("CCGG"));
-//   REQUIRE(isMatch2);
-//   REQUIRE(isMatch3);
-// }
+  // Check originals aren't broken
+  bool isMatch2 = (str1 == DNAStrand("AATT"));
+  bool isMatch3 = (str2 == DNAStrand("CCGG"));
+  REQUIRE(isMatch2);
+  REQUIRE(isMatch3);
+}
