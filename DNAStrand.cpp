@@ -79,5 +79,8 @@ DNAStrand::Base DNAStrand::at(int index) const {
 
 string DNAStrand::toString() const {
   string output;
-  for 
+  for (int i = 0; i < m_length; ++i) {
+    output += baseToChar(m_bases[i]);
+  }
+  return output;
 }
