@@ -46,5 +46,8 @@ DNAStrand::Base DNAStrand::charToBase(char c)
 
 DNAStrand::DNAStrand(int lengthValue) {
   m_length = lengthValue;
-  
+  m_bases = new Base[lengthValue];
+  for (int i = 0; i < lengthValue; i++) {
+    
+  }
 }
