@@ -146,10 +146,12 @@ DNAStrand DNAStrand::getComplement() const {
       case Base::G:
         compliment.m_bases[i] = Base::C;
         break;
-        
+
       default:
         throw logic_error("Invalid base");
     }
 
   }
+
+  return compliment;
 }
