@@ -100,5 +100,8 @@ bool DNAStrand::operator==(const DNAStrand &other) const {
 
 DNAStrand::DNAStrand(const DNAStrand &other) {
   m_length = other.m_length;
-  
+  m_bases = new Base[m_length];
+  for (int i; i < m_length; ++i) {
+    m_bases[i] = other.m_bases[i];
+  }
 }
