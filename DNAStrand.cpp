@@ -97,3 +97,7 @@ bool DNAStrand::operator==(const DNAStrand &other) const {
   }
   return true;
 }
+
+DNAStrand::DNAStrand(const DNAStrand &other) {
+  
+}
