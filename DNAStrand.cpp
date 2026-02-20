@@ -43,3 +43,7 @@ DNAStrand::Base DNAStrand::charToBase(char c)
     throw logic_error("Invalid char value for converting to base: "s + c);
   }
 }
+
+DNAStrand::DNAStrand(int lengthValue) {
+  
+}
