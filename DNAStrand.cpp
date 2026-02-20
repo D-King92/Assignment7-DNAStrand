@@ -109,7 +109,4 @@ DNAStrand::DNAStrand(const DNAStrand& other)
   for (int i; i < m_length; ++i) {
     m_bases[i] = other.m_bases[i];
   }
-
-  cout << toString();
-  cout << other.toString();
 }
