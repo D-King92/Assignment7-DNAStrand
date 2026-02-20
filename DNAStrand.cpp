@@ -113,6 +113,12 @@ DNAStrand::DNAStrand(const DNAStrand& other)
 
 DNAStrand &DNAStrand::operator=(const DNAStrand &other) {
   if (this != &other) {
+    delete[] m_bases;
     
+    m_length = other.m_length;
+    m_bases = new Base[m_length];
+    for (int i  = 0; i < m_length; ++i) {
+      m_bases[i] = other.m_bases[i];
+    }
   }
 }
