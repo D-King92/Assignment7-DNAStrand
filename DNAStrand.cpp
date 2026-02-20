@@ -168,4 +168,6 @@ DNAStrand DNAStrand::operator+(const DNAStrand &other) const {
   for (int i = 0; i < other.m_length; ++i) {
     sum.m_bases[m_length + i] = other.m_bases[i];
   }
+
+  return sum;
 }
