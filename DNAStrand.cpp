@@ -48,6 +48,6 @@ DNAStrand::DNAStrand(int lengthValue) {
   m_length = lengthValue;
   m_bases = new Base[lengthValue];
   for (int i = 0; i < lengthValue; i++) {
-    m_bases[i] = DNAStrand::Base::A;
+    m_bases[i] = Base::A;
   }
 }
