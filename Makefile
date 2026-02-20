@@ -20,11 +20,11 @@ ifneq ($(OS),Windows_NT)
 endif
 
 # list .h files here
-HEADERS =
+HEADERS = DNAStrand.h
 
 # list .cpp files here
 TEST_FILES = tests.cpp
-SHARED_FILES = 
+SHARED_FILES = DNAStrand.cpp
 
 .PHONY: all
 all: tests.exe
