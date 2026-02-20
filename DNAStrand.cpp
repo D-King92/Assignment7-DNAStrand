@@ -155,3 +155,5 @@ DNAStrand DNAStrand::getComplement() const {
 
   return compliment;
 }
+
+DNAStrand operator+(const DNAStrand &other) const
