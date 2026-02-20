@@ -73,6 +73,6 @@ DNAStrand::Base DNAStrand::at(int index) const {
   if (index >= 0 && index < m_length) {
     return m_bases[index];
   } else {
-    throw out_of_range;
+    throw out_of_range("Index out of Bounds.");
   }
 }
