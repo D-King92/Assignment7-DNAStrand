@@ -78,5 +78,5 @@ DNAStrand::Base DNAStrand::at(int index) const {
 }
 
 string DNAStrand::toString() const {
-  
+  string stringyThing;
 }
