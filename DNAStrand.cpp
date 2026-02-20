@@ -45,5 +45,6 @@ DNAStrand::Base DNAStrand::charToBase(char c)
 }
 
 DNAStrand::DNAStrand(int lengthValue) {
+  m_length = lengthValue;
   
 }
